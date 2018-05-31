@@ -15,6 +15,10 @@ func Doc(docs ...string) string {
 	return strings.Join(docs, LE)
 }
 
+func T(text ...interface{}) string {
+	return strings.Join(stringifySlice(text), "")
+}
+
 func H(level int, text ...interface{}) string {
 	return fmt.Sprintf("%s %s", strings.Repeat("#", level),
 		strings.Join(stringifySlice(text), ""))
