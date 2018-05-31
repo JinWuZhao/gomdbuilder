@@ -22,9 +22,9 @@ Bullet list:
 - pears
   
 Numbered list:  
-0. wash  
-1. rinse  
-2. repeat
+1. wash  
+2. rinse  
+3. repeat
   
 A [link](http://example.com).  
 ![Image](https://avatars2.githubusercontent.com/u/4271558?s=460&v=4)  

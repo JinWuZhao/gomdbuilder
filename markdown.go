@@ -68,7 +68,7 @@ func BLi(items ...interface{}) string {
 
 func NLi(items ...interface{}) string {
 	return strings.Join(rangeStrings(func(i int, s string) string {
-		return fmt.Sprintf("%d. ", i) + s
+		return fmt.Sprintf("%d. ", i+1) + s
 	}, stringifySlice(items)), BR+LE)
 }
 
