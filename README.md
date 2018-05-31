@@ -32,3 +32,6 @@ Result: [example.md](example/example.md)
 # License
 
 BSD 3-Clause License
+
+Copyright (c) 2018, jinwuzhao
+All rights reserved.
