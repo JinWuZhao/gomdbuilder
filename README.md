@@ -28,3 +28,7 @@ func main() {
 
 Source: [example.go](example/example.go)  
 Result: [example.md](example/example.md)
+
+# License
+
+BSD 3-Clause License
