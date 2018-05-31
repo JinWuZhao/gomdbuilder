@@ -29,6 +29,12 @@ func main() {
 Source: [example.go](example/example.go)  
 Result: [example.md](example/example.md)
 
+# Usage
+
+```bash
+go get -u github.com/JinWuZhao/gomdbuilder
+```
+
 # License
 
 BSD 3-Clause License
