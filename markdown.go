@@ -6,9 +6,14 @@ import (
 )
 
 const (
-	BR  = "  "
-	HLE = "===" + LE
-	HR  = LE + "---" + LE
+	BR   = "  "
+	BRLE = BR + LE
+	HLE  = "===" + LE
+	HR   = LE + "---" + LE
+
+	LA = ":----"
+	RA = "----:"
+	CE = ":----:"
 )
 
 func Doc(docs ...string) string {
@@ -114,4 +119,14 @@ func Q6(text ...interface{}) string {
 
 func Code(lang string, codes ...interface{}) string {
 	return fmt.Sprintf("```%s\n%s\n```", lang, strings.Join(stringifySlice(codes), ""))
+}
+
+func TR(columns ...interface{}) string {
+	return strings.Join(stringifySlice(columns), " | ")
+}
+
+func Table(rows ...string) string {
+	return strings.Join(rangeStrings(func(_ int, s string) string {
+		return fmt.Sprintf("| %s |", s)
+	}, rows), LE) + LE
 }

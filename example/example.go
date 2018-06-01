@@ -47,7 +47,12 @@ import "fmt"
 func main() {
 	fmt.Println("Hello World!")
 }
-`))
+`),
+		Table(TR("Month", "Savings"),
+			TR(CE, LA),
+			TR("January", "$100"),
+			TR("February", "$130")),
+	)
 
 	ioutil.WriteFile("example.md", []byte(doc), 0666)
 }

@@ -45,3 +45,7 @@ func main() {
 }
 
 ```
+| Month | Savings |
+| :----: | :---- |
+| January | $100 |
+| February | $130 |
